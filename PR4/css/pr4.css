@@ -20,6 +20,7 @@ body {
 
 header {
     display: flex;
+    position: relative;
 }
 
 .plant {
@@ -65,10 +66,10 @@ h1 {
     display: flex;
 }
 .Next {
+    align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
     background: #156963;
     width: 320px;
     height: 160px;
@@ -83,7 +84,7 @@ h1 {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-    margin-right: 100px;
+    text-align: left;
 }
 
 .Next span {
@@ -94,7 +95,7 @@ h1 {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-    margin-right: 100px;
+    text-align: left;
 }
 
 .Previous h3 {
@@ -132,6 +133,7 @@ h1 {
 }
 
 .rightside {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,8 +147,8 @@ a {
 .navbar {
     position: absolute;
     height: 60px;
-    width: 1220px;
-    left: 320px;
+    width: 100%;
+    max-width: 1280px;
     top: 30px;
 }
 
@@ -429,4 +431,37 @@ ul {
     background: #156963;
     padding: 8px;
     width: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .plant {
+        height: 600px;
+    }
+    header {
+        flex-direction: column;
+    }
+    .hp {
+        padding-top: 60px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    .opis {
+        font-size: 14px;
+    }
+    .prenext {
+        margin-top: 70px;
+    }
+    .Previous {
+        height: 100px;
+        width: 200px;
+    }
+    .Next {
+        height: 100px;
+        width: 200px;
+    }
+    h3 {
+        font-size: 5px;
+    }
+    
 }
